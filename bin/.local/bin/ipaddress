@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+IPADDRESS=$(ip route get 1 | cut -d " " -f 7)
+echo "$IPADDRESS"
+

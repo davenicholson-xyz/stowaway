@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# feh --bg-fill $($HOME/.local/bin/wallhaven -f)
+feh --bg-fill $(wallheaven -f)
