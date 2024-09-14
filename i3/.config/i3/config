@@ -36,6 +36,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xrandr --output Virtual-1 --mode 1440x900
 exec --no-startup-id /home/dave/.local/bin/setbg
 exec --no-startup-id picom -b
+exec --no-startup-id systemctl --user start wallpaper.timer
 
 
 # Use pactl to adjust volume in PulseAudio.
@@ -157,9 +158,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 
 # Wallpapaer changer
-bindsym $mod+Shift+w exec "wallheaven -c wallpaper"
+bindsym $mod+Shift+w exec "systemctl --user stop wallpaper.timer && systemctl --user start wallpaper.timer"
 # browser
 bindsym $mod+b exec "google-chrome-stable"
+
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -202,5 +204,5 @@ gaps inner 6
 # finds out, if available)
 bar {
         # status_command i3blocks
-        status_command i3status
+        status_command i3status-rs
 }

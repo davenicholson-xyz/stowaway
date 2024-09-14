@@ -1,0 +1,9 @@
+[Unit]
+Description=Randomly change the wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=wallheaven -c wallpaper
+
+[Install]
+WantedBy=timers.target
