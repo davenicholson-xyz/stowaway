@@ -1,6 +1,6 @@
 username="fatnic"
 apikey="XXMiYVopgEjJlslkFOWxkmbdM1k4nGEi"
 post_script="/home/dave/.local/bin/setwallpaper"
-purity="100"
+purity="111"
 categories="101"
-expiry=600
+expiry=3600
