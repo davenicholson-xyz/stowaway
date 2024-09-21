@@ -3,7 +3,8 @@ Description=Randomly change the wallpaper
 
 [Service]
 Type=oneshot
-ExecStart=wallheaven -c wallpaper
+; ExecStart=wallheaven -c wallpaper
+ExecStart=/home/dave/.cargo/bin/wallheaven -c wallpaper --config /home/dave/.config/wallheaven/config.toml
 
 [Install]
 WantedBy=timers.target

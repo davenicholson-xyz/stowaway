@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-PATH=$PATH:/home/dave/.local/bin
+PATH=$PATH:/home/dave/.local/bin:/home/dave/.local/exec
+PATH=$PATH:/home/dave/.cargo/bin
+# wal -R -q
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
